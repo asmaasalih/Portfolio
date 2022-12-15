@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+header{
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+header .logo{
+    text-decoration: none;
+    font-family: 'Rubik Moonrocks', cursive;
+    color: rgb(95, 4, 156);
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 1.8em;
+    text-transform: uppercase;
+
+}
+header .navbar ul li{
+    display: inline-block;
+    padding:10px;
+
+}
+header .navbar ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(111, 21, 172);
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+header .navbar ul li a:hover{
+    color: rgb(153, 82, 247);
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    align-items:center;
+    
+    background: url('img/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 1;
+}
+.main h2{
+    color: #fff;
+    font-size:1.5em;
+    font-weight: 500;
+}
+.main h2 span{
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+
+}
+.main h3{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+.main-btn{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #fff;
+    background-color:blueviolet;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 0.9375em 2.187em;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 40px;
+    transition: 0.7 ease;
+    margin-bottom: 20px;
+}
+.main-btn:hover{
+    background-color:rgb(150, 67, 228);
+    transform: scale(1.1);
+}
+.social-icons a{
+    color: #fff;
+    font-size: 1.7em;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.social-icons a:hover{
+    background-color: blueviolet;
+}
+.title{
+    display:flex;
+    justify-content: center;
+    color: rgb(93, 27, 180);
+    font-size: 2.2em;
+    font-weight:800;
+    margin-bottom: 20px;
+}
+.content{
+    display:flex;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+.card{
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0px 5px 34px rgba(66, 59, 59, 0.6);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px;
+    transition: 0.7s ease;
+    min-height: 350px;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card-icon {
+    display: flex;
+    justify-content: center
+}
+.card-icon i{
+    font-size: 6em;
+    font-weight: 600;
+    color: rgb(70, 9, 128);
+    margin: auto;
+    padding: 20px;
+}
+.card-info{
+    text-align: center;
+}
+.card-info h3{
+    font-size: 1.5em;
+    padding: 10px;
+}
+.projects {
+    background-color: #000016;
+}
+.projects .content{
+    margin-top: 50px;
+}
+.proj-card {
+    background-color:#fff;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 20px;
+    min-height: 14em;
+    width: 22em;
+    overflow: hidden;
+    transition: 0.7s ease;
+    margin-bottom: 20px;
+}
+.proj-card:hover{
+    transform: scale(1.1);
+}
+.proj-card:hover .card-img{
+    opacity: 0.9;
+}
+.card-img img{
+    width: 100%;
+}
+.proj-card .card-info{
+    padding: 1em;
+}
+.card-info p{
+    font-size: 1.3em;
+}
+.card-info strong{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.card-info a{
+    text-decoration: none;
+}
+.card-info a:hover{
+    color:rgb(204, 52, 235);
+}
+.footer {
+    background-color:#000016;
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+}
+.footer p{
+    color: #fff;
+    padding: 10px;
+}
+.footer p span{
+    color:rgb(119, 18, 235);    
+}
+.footer p i{
+    color: rgb(241, 95, 95);
+    font-size:1.4em
+}
+.footer .social-icons{
+    font-size: 1em;
+    padding: 7px;
+}
+@media (max-width: 1023px){
+    header{
+        padding: 12px 20px;
+    }
+    header .logo{
+        font-size: 1.3em;
+    }
+    header .navbar ul li{
+        padding: 5px;
+    
+    }
+    header .navbar ul li a{
+        padding-left: 8px;
+        font-size:1em;
+        font-weight: 600;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main h2{
+        font-size: 1em;
+        font-weight: 500;
+    }
+    .main h2 span{
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+    .main h3{
+        font-size: 1em;
+        font-weight: 500;
+    }
+    .main-btn{
+        font-weight: 600;
+        font-size: 1em;
+        padding: 0.6375em 1.187em;
+    }   
+    .social-icons a{
+        font-size: 1.5em;
+        padding-left:5px;
+    }
+    .title{
+        font-size: 1.8em;
+        font-weight:700;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .proj-card {
+        min-height: 14em;
+        width: 20em;
+    }
+    .footer {
+        flex-direction:column;
+        align-items: center;
+    }
+}
+@media (max-width:641px){
+    body {
+        font-size: 14px;
+    }
+    header{
+        padding: 12px 20px;
+    }
+    header .logo{
+        font-size: 1.3em;
+    }
+    header .navbar ul li{
+        padding: 0;
+    
+    }
+    header .navbar ul li a{
+        padding-left: 8px;
+        font-size:1em;
+        font-weight: 600;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main h2{
+        font-size: 1.3em;
+        font-weight: 500;
+    }
+    .main h2 span{
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+    .main h3{
+        font-size: 1em;
+        font-weight: 500;
+    }
+    .main-btn{
+        font-weight: 600;
+        font-size: 1em;
+        padding: 0.6375em 1.187em;
+    }   
+    .social-icons a{
+        font-size: 1.5em;
+        padding-left:5px;
+    }
+    .title{
+        font-size: 1.8em;
+        font-weight:700;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .proj-card {
+        min-height: 14em;
+        width: 22em;
+    }
+    .footer {
+        flex-direction:column;
+        align-items: center;
+    }
+
+}
